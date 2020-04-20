@@ -1,0 +1,212 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>43333f02-4fd0-43b1-836e-d091ff2d9b61</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>PythonApplication2.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>PythonApplication2</Name>
+    <RootNamespace>PythonApplication2</RootNamespace>
+    <InterpreterId>CondaEnv|CondaEnv|mxnet-1</InterpreterId>
+    <TestFramework>Pytest</TestFramework>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="face_image.py" />
+    <Compile Include="face_model.py" />
+    <Compile Include="face_preprocess.py" />
+    <Compile Include="fresnet.py" />
+    <Compile Include="helper.py" />
+    <Compile Include="mtcnn_detector.py" />
+    <Compile Include="PythonApplication2.py" />
+    <Compile Include="rcnn\config.py" />
+    <Compile Include="rcnn\core\callback.py" />
+    <Compile Include="rcnn\core\loader.py" />
+    <Compile Include="rcnn\core\metric.py" />
+    <Compile Include="rcnn\core\module.py" />
+    <Compile Include="rcnn\core\module_bak.py" />
+    <Compile Include="rcnn\core\tester.py" />
+    <Compile Include="rcnn\core\__init__.py" />
+    <Compile Include="rcnn\cython\setup.py" />
+    <Compile Include="rcnn\cython\setup2.py" />
+    <Compile Include="rcnn\cython\__init__.py" />
+    <Compile Include="rcnn\dataset\ds_utils.py" />
+    <Compile Include="rcnn\dataset\imdb.py" />
+    <Compile Include="rcnn\dataset\retinaface.py" />
+    <Compile Include="rcnn\dataset\__init__.py" />
+    <Compile Include="rcnn\io\image.py" />
+    <Compile Include="rcnn\io\rcnn.py" />
+    <Compile Include="rcnn\io\rpn.py" />
+    <Compile Include="rcnn\io\__init__.py" />
+    <Compile Include="rcnn\logger.py" />
+    <Compile Include="rcnn\processing\assign_levels.py" />
+    <Compile Include="rcnn\processing\bbox_regression.py" />
+    <Compile Include="rcnn\processing\bbox_transform.py" />
+    <Compile Include="rcnn\processing\generate_anchor.py" />
+    <Compile Include="rcnn\processing\nms.py" />
+    <Compile Include="rcnn\processing\__init__.py" />
+    <Compile Include="rcnn\pycocotools\coco.py" />
+    <Compile Include="rcnn\pycocotools\cocoeval.py" />
+    <Compile Include="rcnn\pycocotools\mask.py" />
+    <Compile Include="rcnn\pycocotools\setup.py" />
+    <Compile Include="rcnn\pycocotools\__init__.py" />
+    <Compile Include="rcnn\PY_OP\rpn_fpn_ohem3.py" />
+    <Compile Include="rcnn\PY_OP\__init__.py" />
+    <Compile Include="rcnn\symbol\pyramidbox.py" />
+    <Compile Include="rcnn\symbol\symbol_common.py" />
+    <Compile Include="rcnn\symbol\symbol_mnet.py" />
+    <Compile Include="rcnn\symbol\symbol_resnet.py" />
+    <Compile Include="rcnn\symbol\symbol_ssh.py" />
+    <Compile Include="rcnn\symbol\__init__.py" />
+    <Compile Include="rcnn\tools\demo_images.py" />
+    <Compile Include="rcnn\tools\demo_single_image.py" />
+    <Compile Include="rcnn\tools\reeval.py" />
+    <Compile Include="rcnn\tools\test_rcnn.py" />
+    <Compile Include="rcnn\tools\test_rpn.py" />
+    <Compile Include="rcnn\tools\train_maskrcnn.py" />
+    <Compile Include="rcnn\tools\train_rcnn.py" />
+    <Compile Include="rcnn\tools\train_rpn.py" />
+    <Compile Include="rcnn\tools\__init__.py" />
+    <Compile Include="rcnn\utils\combine_model.py" />
+    <Compile Include="rcnn\utils\load_data.py" />
+    <Compile Include="rcnn\utils\load_model.py" />
+    <Compile Include="rcnn\utils\save_model.py" />
+    <Compile Include="rcnn\utils\__init__.py" />
+    <Compile Include="rcnn\__init__.py" />
+    <Compile Include="retinaface.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="model\" />
+    <Folder Include="mtcnn-model\" />
+    <Folder Include="rcnn\" />
+    <Folder Include="rcnn\core\" />
+    <Folder Include="rcnn\core\__pycache__\" />
+    <Folder Include="rcnn\cython\" />
+    <Folder Include="rcnn\cython\build\" />
+    <Folder Include="rcnn\cython\build\lib.win-amd64-3.7\" />
+    <Folder Include="rcnn\cython\build\temp.win-amd64-3.7\" />
+    <Folder Include="rcnn\cython\build\temp.win-amd64-3.7\Release\" />
+    <Folder Include="rcnn\cython\__pycache__\" />
+    <Folder Include="rcnn\dataset\" />
+    <Folder Include="rcnn\dataset\__pycache__\" />
+    <Folder Include="rcnn\io\" />
+    <Folder Include="rcnn\io\__pycache__\" />
+    <Folder Include="rcnn\processing\" />
+    <Folder Include="rcnn\processing\__pycache__\" />
+    <Folder Include="rcnn\pycocotools\" />
+    <Folder Include="rcnn\PY_OP\" />
+    <Folder Include="rcnn\PY_OP\__pycache__\" />
+    <Folder Include="rcnn\symbol\" />
+    <Folder Include="rcnn\symbol\__pycache__\" />
+    <Folder Include="rcnn\tools\" />
+    <Folder Include="rcnn\utils\" />
+    <Folder Include="rcnn\utils\__pycache__\" />
+    <Folder Include="rcnn\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="model\R50-0000.params" />
+    <Content Include="model\R50-symbol.json" />
+    <Content Include="model\resnet-50-0000.params" />
+    <Content Include="model\resnet-50-symbol.json" />
+    <Content Include="mtcnn-model\det1-0001.params" />
+    <Content Include="mtcnn-model\det1-symbol.json" />
+    <Content Include="mtcnn-model\det1.caffemodel" />
+    <Content Include="mtcnn-model\det1.prototxt" />
+    <Content Include="mtcnn-model\det2-0001.params" />
+    <Content Include="mtcnn-model\det2-symbol.json" />
+    <Content Include="mtcnn-model\det2.caffemodel" />
+    <Content Include="mtcnn-model\det2.prototxt" />
+    <Content Include="mtcnn-model\det3-0001.params" />
+    <Content Include="mtcnn-model\det3-symbol.json" />
+    <Content Include="mtcnn-model\det3.caffemodel" />
+    <Content Include="mtcnn-model\det3.prototxt" />
+    <Content Include="mtcnn-model\det4-0001.params" />
+    <Content Include="mtcnn-model\det4-symbol.json" />
+    <Content Include="mtcnn-model\det4.caffemodel" />
+    <Content Include="mtcnn-model\det4.prototxt" />
+    <Content Include="rcnn\core\__pycache__\callback.cpython-37.pyc" />
+    <Content Include="rcnn\core\__pycache__\loader.cpython-37.pyc" />
+    <Content Include="rcnn\core\__pycache__\metric.cpython-37.pyc" />
+    <Content Include="rcnn\core\__pycache__\module.cpython-37.pyc" />
+    <Content Include="rcnn\core\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\cython.rar" />
+    <Content Include="rcnn\cython\.gitignore" />
+    <Content Include="rcnn\cython\anchors.c" />
+    <Content Include="rcnn\cython\anchors.cp37-win_amd64.pyd" />
+    <Content Include="rcnn\cython\anchors.pyx" />
+    <Content Include="rcnn\cython\bbox.c" />
+    <Content Include="rcnn\cython\bbox.cp37-win_amd64.pyd" />
+    <Content Include="rcnn\cython\bbox.pyx" />
+    <Content Include="rcnn\cython\build\lib.win-amd64-3.7\bbox.cp37-win_amd64.pyd" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\anchors.cp37-win_amd64.exp" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\anchors.cp37-win_amd64.lib" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\anchors.obj" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\bbox.cp37-win_amd64.exp" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\bbox.cp37-win_amd64.lib" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\bbox.obj" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\cpu_nms.cp37-win_amd64.exp" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\cpu_nms.cp37-win_amd64.lib" />
+    <Content Include="rcnn\cython\build\temp.win-amd64-3.7\Release\cpu_nms.obj" />
+    <Content Include="rcnn\cython\cpu_nms.c" />
+    <Content Include="rcnn\cython\cpu_nms.cp37-win_amd64.pyd" />
+    <Content Include="rcnn\cython\cpu_nms.pyx" />
+    <Content Include="rcnn\cython\gpu_nms.hpp" />
+    <Content Include="rcnn\cython\gpu_nms.pyx" />
+    <Content Include="rcnn\cython\nms_kernel.cu" />
+    <Content Include="rcnn\cython\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\dataset\__pycache__\ds_utils.cpython-37.pyc" />
+    <Content Include="rcnn\dataset\__pycache__\imdb.cpython-37.pyc" />
+    <Content Include="rcnn\dataset\__pycache__\retinaface.cpython-37.pyc" />
+    <Content Include="rcnn\dataset\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\io\__pycache__\image.cpython-37.pyc" />
+    <Content Include="rcnn\io\__pycache__\rpn.cpython-37.pyc" />
+    <Content Include="rcnn\io\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\processing\__pycache__\bbox_transform.cpython-37.pyc" />
+    <Content Include="rcnn\processing\__pycache__\generate_anchor.cpython-37.pyc" />
+    <Content Include="rcnn\processing\__pycache__\nms.cpython-37.pyc" />
+    <Content Include="rcnn\processing\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\pycocotools\maskApi.c" />
+    <Content Include="rcnn\pycocotools\maskApi.h" />
+    <Content Include="rcnn\pycocotools\UPSTREAM_REV" />
+    <Content Include="rcnn\pycocotools\_mask.c" />
+    <Content Include="rcnn\pycocotools\_mask.pyx" />
+    <Content Include="rcnn\PY_OP\__pycache__\rpn_fpn_ohem3.cpython-37.pyc" />
+    <Content Include="rcnn\PY_OP\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\symbol\symbol_common.py.bak" />
+    <Content Include="rcnn\symbol\symbol_mnet.py.bak" />
+    <Content Include="rcnn\symbol\__pycache__\symbol_common.cpython-37.pyc" />
+    <Content Include="rcnn\symbol\__pycache__\symbol_mnet.cpython-37.pyc" />
+    <Content Include="rcnn\symbol\__pycache__\symbol_resnet.cpython-37.pyc" />
+    <Content Include="rcnn\symbol\__pycache__\symbol_ssh.cpython-37.pyc" />
+    <Content Include="rcnn\symbol\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\utils\__pycache__\load_data.cpython-37.pyc" />
+    <Content Include="rcnn\utils\__pycache__\load_model.cpython-37.pyc" />
+    <Content Include="rcnn\utils\__pycache__\__init__.cpython-37.pyc" />
+    <Content Include="rcnn\__pycache__\config.cpython-37.pyc" />
+    <Content Include="rcnn\__pycache__\logger.cpython-37.pyc" />
+    <Content Include="rcnn\__pycache__\__init__.cpython-37.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="CondaEnv|CondaEnv|mxnet-1" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
